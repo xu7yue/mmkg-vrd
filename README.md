@@ -20,6 +20,7 @@ pip install -U mmkg-vrd
 ## 3. 使用示例及运行参数说明
 
 **需要准备 pretrained_ckpt, labelmap_file, freq_prior 三个文件，可以通过 [mmkg-vrd](https://github.com/xu7yue/mmkg-vrd) 上所提供的链接进行下载**
+* google drive: https://drive.google.com/file/d/1_GE1K_hJ9-FU8p8MWfcDYbgFT3MCabwN/view?usp=share_link
 
 ```python
 from mmkg_vrd import VRD

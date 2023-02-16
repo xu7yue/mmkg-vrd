@@ -35,7 +35,19 @@ def main():
         outputs=gr.Image(type="filepath"),
         examples=[
             [
-                'custom_io/imgs/1024px-Gen_Robert_E_Lee_on_Traveler_at_Gettysburg_Pa.jpg', 
+                'custom_io/imgs/test0.jpg', 
+            ],
+            [
+                'custom_io/imgs/test1.jpg', 
+            ],
+            [
+                'custom_io/imgs/test2.png', 
+            ],
+            [
+                'custom_io/imgs/test3.png', 
+            ],
+            [
+                'custom_io/imgs/woman_fish.jpg', 
             ]
         ],
       
