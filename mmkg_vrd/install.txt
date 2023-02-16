@@ -1,0 +1,483 @@
+srun: job 5611917 queued and waiting for resources
+srun: job 5611917 has been allocated resources
+srun: Job 5611917 scheduled successfully!
+Current QUOTA_TYPE is [reserved], which means the job has occupied quota in RESERVED_TOTAL under your partition.
+Current PHX_PRIORITY is normal
+
+Using pip 21.2.2 from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/pip (python 3.6)
+Obtaining file:///mnt/petrelfs/chenzeren/scene_graph_benchmark
+    Running command python setup.py egg_info
+    running egg_info
+    creating /tmp/pip-pip-egg-info-6e7bovzh/maskrcnn_benchmark.egg-info
+    writing /tmp/pip-pip-egg-info-6e7bovzh/maskrcnn_benchmark.egg-info/PKG-INFO
+    writing dependency_links to /tmp/pip-pip-egg-info-6e7bovzh/maskrcnn_benchmark.egg-info/dependency_links.txt
+    writing top-level names to /tmp/pip-pip-egg-info-6e7bovzh/maskrcnn_benchmark.egg-info/top_level.txt
+    writing manifest file '/tmp/pip-pip-egg-info-6e7bovzh/maskrcnn_benchmark.egg-info/SOURCES.txt'
+    reading manifest file '/tmp/pip-pip-egg-info-6e7bovzh/maskrcnn_benchmark.egg-info/SOURCES.txt'
+    adding license file 'LICENSE'
+    writing manifest file '/tmp/pip-pip-egg-info-6e7bovzh/maskrcnn_benchmark.egg-info/SOURCES.txt'
+Installing collected packages: maskrcnn-benchmark
+  Running setup.py develop for maskrcnn-benchmark
+    Running command /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/bin/python -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/mnt/petrelfs/chenzeren/scene_graph_benchmark/setup.py'"'"'; __file__='"'"'/mnt/petrelfs/chenzeren/scene_graph_benchmark/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' develop --no-deps
+    running develop
+    running egg_info
+    creating maskrcnn_benchmark.egg-info
+    writing maskrcnn_benchmark.egg-info/PKG-INFO
+    writing dependency_links to maskrcnn_benchmark.egg-info/dependency_links.txt
+    writing top-level names to maskrcnn_benchmark.egg-info/top_level.txt
+    writing manifest file 'maskrcnn_benchmark.egg-info/SOURCES.txt'
+    reading manifest file 'maskrcnn_benchmark.egg-info/SOURCES.txt'
+    adding license file 'LICENSE'
+    writing manifest file 'maskrcnn_benchmark.egg-info/SOURCES.txt'
+    running build_ext
+    building 'maskrcnn_benchmark._C' extension
+    creating /mnt/petrelfs/chenzeren/scene_graph_benchmark/build
+    creating /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6
+    creating /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt
+    creating /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs
+    creating /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren
+    creating /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark
+    creating /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark
+    creating /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc
+    creating /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu
+    creating /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cuda
+    Emitting ninja build file /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/build.ninja...
+    Compiling objects...
+    Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+    [1/11] /mnt/cache/share/cuda-11.3/bin/nvcc -DWITH_CUDA -I/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/TH -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/THC -I/mnt/cache/share/cuda-11.3/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/include/python3.6m -c -c /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cuda/deform_pool_cuda.cu -o /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cuda/deform_pool_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DCUDA_HAS_FP16=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_80,code=sm_80 -ccbin /mnt/cache/share/gcc/gcc-7.3.0/bin/gcc -std=c++14
+    [2/11] /mnt/cache/share/cuda-11.3/bin/nvcc -DWITH_CUDA -I/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/TH -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/THC -I/mnt/cache/share/cuda-11.3/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/include/python3.6m -c -c /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cuda/deform_conv_cuda.cu -o /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cuda/deform_conv_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DCUDA_HAS_FP16=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_80,code=sm_80 -ccbin /mnt/cache/share/gcc/gcc-7.3.0/bin/gcc -std=c++14
+    [3/11] /mnt/cache/share/cuda-11.3/bin/nvcc -DWITH_CUDA -I/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/TH -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/THC -I/mnt/cache/share/cuda-11.3/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/include/python3.6m -c -c /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cuda/nms.cu -o /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cuda/nms.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DCUDA_HAS_FP16=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_80,code=sm_80 -ccbin /mnt/cache/share/gcc/gcc-7.3.0/bin/gcc -std=c++14
+    [4/11] /mnt/cache/share/cuda-11.3/bin/nvcc -DWITH_CUDA -I/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/TH -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/THC -I/mnt/cache/share/cuda-11.3/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/include/python3.6m -c -c /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cuda/SigmoidFocalLoss_cuda.cu -o /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cuda/SigmoidFocalLoss_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DCUDA_HAS_FP16=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_80,code=sm_80 -ccbin /mnt/cache/share/gcc/gcc-7.3.0/bin/gcc -std=c++14
+    [5/11] /mnt/cache/share/cuda-11.3/bin/nvcc -DWITH_CUDA -I/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/TH -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/THC -I/mnt/cache/share/cuda-11.3/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/include/python3.6m -c -c /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cuda/ROIPool_cuda.cu -o /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cuda/ROIPool_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DCUDA_HAS_FP16=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_80,code=sm_80 -ccbin /mnt/cache/share/gcc/gcc-7.3.0/bin/gcc -std=c++14
+    [6/11] /mnt/cache/share/cuda-11.3/bin/nvcc -DWITH_CUDA -I/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/TH -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/THC -I/mnt/cache/share/cuda-11.3/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/include/python3.6m -c -c /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cuda/ROIAlign_cuda.cu -o /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cuda/ROIAlign_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DCUDA_HAS_FP16=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_80,code=sm_80 -ccbin /mnt/cache/share/gcc/gcc-7.3.0/bin/gcc -std=c++14
+    [7/11] /mnt/cache/share/cuda-11.3/bin/nvcc -DWITH_CUDA -I/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/TH -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/THC -I/mnt/cache/share/cuda-11.3/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/include/python3.6m -c -c /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cuda/deform_pool_kernel_cuda.cu -o /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cuda/deform_pool_kernel_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DCUDA_HAS_FP16=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_80,code=sm_80 -ccbin /mnt/cache/share/gcc/gcc-7.3.0/bin/gcc -std=c++14
+    [8/11] /mnt/cache/share/cuda-11.3/bin/nvcc -DWITH_CUDA -I/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/TH -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/THC -I/mnt/cache/share/cuda-11.3/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/include/python3.6m -c -c /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cuda/deform_conv_kernel_cuda.cu -o /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cuda/deform_conv_kernel_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DCUDA_HAS_FP16=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_80,code=sm_80 -ccbin /mnt/cache/share/gcc/gcc-7.3.0/bin/gcc -std=c++14
+    [9/11] /mnt/cache/share/gcc/gcc-7.3.0/bin/g++ -MMD -MF /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.o.d -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DWITH_CUDA -I/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/TH -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/THC -I/mnt/cache/share/cuda-11.3/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/include/python3.6m -c -c /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp -o /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.o -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++14
+    cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+    In file included from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/Parallel.h:149:0,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/utils.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/nn/cloneable.h:5,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/nn.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/all.h:12,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/extension.h:4,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/vision.h:3,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:2:
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/ParallelOpenMP.h:84:0: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+     #pragma omp parallel for if ((end - begin) >= grain_size)
+
+    In file included from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/core/Device.h:5:0,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/core/Allocator.h:6,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/ATen.h:7,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/extension.h:4,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/vision.h:3,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:2:
+    /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp: In instantiation of ‘at::Tensor nms_cpu_kernel(const at::Tensor&, const at::Tensor&, float) [with scalar_t = double]’:
+    /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:71:3:   required from here
+    /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:11:23: warning: ‘at::DeprecatedTypeProperties& at::Tensor::type() const’ is deprecated: Tensor.type() is deprecated. Instead use Tensor.options(), which in many cases (e.g. in a constructor) is a drop-in replacement. If you were using data from type(), that is now available from Tensor itself, so instead of tensor.type().scalar_type(), use tensor.scalar_type() instead and instead of tensor.type().backend() use tensor.device(). [-Wdeprecated-declarations]
+       AT_ASSERTM(dets.type() == scores.type(), "dets should have the same type as scores");
+                  ~~~~~~~~~^~
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:219:39: note: in definition of macro ‘C10_EXPAND_MSVC_WORKAROUND’
+     #define C10_EXPAND_MSVC_WORKAROUND(x) x
+                                           ^
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:238:34: note: in expansion of macro ‘C10_UNLIKELY’
+     #define C10_UNLIKELY_OR_CONST(e) C10_UNLIKELY(e)
+                                      ^~~~~~~~~~~~
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:285:7: note: in expansion of macro ‘C10_UNLIKELY_OR_CONST’
+       if (C10_UNLIKELY_OR_CONST(!(cond))) {       \
+           ^~~~~~~~~~~~~~~~~~~~~
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:447:32: note: in expansion of macro ‘TORCH_INTERNAL_ASSERT’
+         C10_EXPAND_MSVC_WORKAROUND(TORCH_INTERNAL_ASSERT(cond, __VA_ARGS__));     \
+                                    ^~~~~~~~~~~~~~~~~~~~~
+    /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:11:3: note: in expansion of macro ‘AT_ASSERTM’
+       AT_ASSERTM(dets.type() == scores.type(), "dets should have the same type as scores");
+       ^~~~~~~~~~
+    In file included from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/Tensor.h:3:0,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/Context.h:4,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/ATen.h:9,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/extension.h:4,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/vision.h:3,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:2:
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/core/TensorBody.h:277:30: note: declared here
+       DeprecatedTypeProperties & type() const {
+                                  ^~~~
+    In file included from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/core/Device.h:5:0,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/core/Allocator.h:6,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/ATen.h:7,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/extension.h:4,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/vision.h:3,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:2:
+    /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:11:23: warning: ‘at::DeprecatedTypeProperties& at::Tensor::type() const’ is deprecated: Tensor.type() is deprecated. Instead use Tensor.options(), which in many cases (e.g. in a constructor) is a drop-in replacement. If you were using data from type(), that is now available from Tensor itself, so instead of tensor.type().scalar_type(), use tensor.scalar_type() instead and instead of tensor.type().backend() use tensor.device(). [-Wdeprecated-declarations]
+       AT_ASSERTM(dets.type() == scores.type(), "dets should have the same type as scores");
+                  ~~~~~~~~~^~
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:219:39: note: in definition of macro ‘C10_EXPAND_MSVC_WORKAROUND’
+     #define C10_EXPAND_MSVC_WORKAROUND(x) x
+                                           ^
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:238:34: note: in expansion of macro ‘C10_UNLIKELY’
+     #define C10_UNLIKELY_OR_CONST(e) C10_UNLIKELY(e)
+                                      ^~~~~~~~~~~~
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:285:7: note: in expansion of macro ‘C10_UNLIKELY_OR_CONST’
+       if (C10_UNLIKELY_OR_CONST(!(cond))) {       \
+           ^~~~~~~~~~~~~~~~~~~~~
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:447:32: note: in expansion of macro ‘TORCH_INTERNAL_ASSERT’
+         C10_EXPAND_MSVC_WORKAROUND(TORCH_INTERNAL_ASSERT(cond, __VA_ARGS__));     \
+                                    ^~~~~~~~~~~~~~~~~~~~~
+    /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:11:3: note: in expansion of macro ‘AT_ASSERTM’
+       AT_ASSERTM(dets.type() == scores.type(), "dets should have the same type as scores");
+       ^~~~~~~~~~
+    In file included from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/Tensor.h:3:0,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/Context.h:4,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/ATen.h:9,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/extension.h:4,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/vision.h:3,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:2:
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/core/TensorBody.h:277:30: note: declared here
+       DeprecatedTypeProperties & type() const {
+                                  ^~~~
+    In file included from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/core/Device.h:5:0,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/core/Allocator.h:6,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/ATen.h:7,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/extension.h:4,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/vision.h:3,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:2:
+    /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:11:40: warning: ‘at::DeprecatedTypeProperties& at::Tensor::type() const’ is deprecated: Tensor.type() is deprecated. Instead use Tensor.options(), which in many cases (e.g. in a constructor) is a drop-in replacement. If you were using data from type(), that is now available from Tensor itself, so instead of tensor.type().scalar_type(), use tensor.scalar_type() instead and instead of tensor.type().backend() use tensor.device(). [-Wdeprecated-declarations]
+       AT_ASSERTM(dets.type() == scores.type(), "dets should have the same type as scores");
+                                 ~~~~~~~~~~~^~
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:219:39: note: in definition of macro ‘C10_EXPAND_MSVC_WORKAROUND’
+     #define C10_EXPAND_MSVC_WORKAROUND(x) x
+                                           ^
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:238:34: note: in expansion of macro ‘C10_UNLIKELY’
+     #define C10_UNLIKELY_OR_CONST(e) C10_UNLIKELY(e)
+                                      ^~~~~~~~~~~~
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:285:7: note: in expansion of macro ‘C10_UNLIKELY_OR_CONST’
+       if (C10_UNLIKELY_OR_CONST(!(cond))) {       \
+           ^~~~~~~~~~~~~~~~~~~~~
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:447:32: note: in expansion of macro ‘TORCH_INTERNAL_ASSERT’
+         C10_EXPAND_MSVC_WORKAROUND(TORCH_INTERNAL_ASSERT(cond, __VA_ARGS__));     \
+                                    ^~~~~~~~~~~~~~~~~~~~~
+    /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:11:3: note: in expansion of macro ‘AT_ASSERTM’
+       AT_ASSERTM(dets.type() == scores.type(), "dets should have the same type as scores");
+       ^~~~~~~~~~
+    In file included from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/Tensor.h:3:0,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/Context.h:4,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/ATen.h:9,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/extension.h:4,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/vision.h:3,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:2:
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/core/TensorBody.h:277:30: note: declared here
+       DeprecatedTypeProperties & type() const {
+                                  ^~~~
+    In file included from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/core/Device.h:5:0,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/core/Allocator.h:6,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/ATen.h:7,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/extension.h:4,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/vision.h:3,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:2:
+    /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:11:40: warning: ‘at::DeprecatedTypeProperties& at::Tensor::type() const’ is deprecated: Tensor.type() is deprecated. Instead use Tensor.options(), which in many cases (e.g. in a constructor) is a drop-in replacement. If you were using data from type(), that is now available from Tensor itself, so instead of tensor.type().scalar_type(), use tensor.scalar_type() instead and instead of tensor.type().backend() use tensor.device(). [-Wdeprecated-declarations]
+       AT_ASSERTM(dets.type() == scores.type(), "dets should have the same type as scores");
+                                 ~~~~~~~~~~~^~
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:219:39: note: in definition of macro ‘C10_EXPAND_MSVC_WORKAROUND’
+     #define C10_EXPAND_MSVC_WORKAROUND(x) x
+                                           ^
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:238:34: note: in expansion of macro ‘C10_UNLIKELY’
+     #define C10_UNLIKELY_OR_CONST(e) C10_UNLIKELY(e)
+                                      ^~~~~~~~~~~~
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:285:7: note: in expansion of macro ‘C10_UNLIKELY_OR_CONST’
+       if (C10_UNLIKELY_OR_CONST(!(cond))) {       \
+           ^~~~~~~~~~~~~~~~~~~~~
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:447:32: note: in expansion of macro ‘TORCH_INTERNAL_ASSERT’
+         C10_EXPAND_MSVC_WORKAROUND(TORCH_INTERNAL_ASSERT(cond, __VA_ARGS__));     \
+                                    ^~~~~~~~~~~~~~~~~~~~~
+    /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:11:3: note: in expansion of macro ‘AT_ASSERTM’
+       AT_ASSERTM(dets.type() == scores.type(), "dets should have the same type as scores");
+       ^~~~~~~~~~
+    In file included from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/Tensor.h:3:0,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/Context.h:4,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/ATen.h:9,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/extension.h:4,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/vision.h:3,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:2:
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/core/TensorBody.h:277:30: note: declared here
+       DeprecatedTypeProperties & type() const {
+                                  ^~~~
+    In file included from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/core/Device.h:5:0,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/core/Allocator.h:6,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/ATen.h:7,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/extension.h:4,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/vision.h:3,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:2:
+    /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp: In instantiation of ‘at::Tensor nms_cpu_kernel(const at::Tensor&, const at::Tensor&, float) [with scalar_t = float]’:
+    /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:71:3:   required from here
+    /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:11:23: warning: ‘at::DeprecatedTypeProperties& at::Tensor::type() const’ is deprecated: Tensor.type() is deprecated. Instead use Tensor.options(), which in many cases (e.g. in a constructor) is a drop-in replacement. If you were using data from type(), that is now available from Tensor itself, so instead of tensor.type().scalar_type(), use tensor.scalar_type() instead and instead of tensor.type().backend() use tensor.device(). [-Wdeprecated-declarations]
+       AT_ASSERTM(dets.type() == scores.type(), "dets should have the same type as scores");
+                  ~~~~~~~~~^~
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:219:39: note: in definition of macro ‘C10_EXPAND_MSVC_WORKAROUND’
+     #define C10_EXPAND_MSVC_WORKAROUND(x) x
+                                           ^
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:238:34: note: in expansion of macro ‘C10_UNLIKELY’
+     #define C10_UNLIKELY_OR_CONST(e) C10_UNLIKELY(e)
+                                      ^~~~~~~~~~~~
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:285:7: note: in expansion of macro ‘C10_UNLIKELY_OR_CONST’
+       if (C10_UNLIKELY_OR_CONST(!(cond))) {       \
+           ^~~~~~~~~~~~~~~~~~~~~
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:447:32: note: in expansion of macro ‘TORCH_INTERNAL_ASSERT’
+         C10_EXPAND_MSVC_WORKAROUND(TORCH_INTERNAL_ASSERT(cond, __VA_ARGS__));     \
+                                    ^~~~~~~~~~~~~~~~~~~~~
+    /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:11:3: note: in expansion of macro ‘AT_ASSERTM’
+       AT_ASSERTM(dets.type() == scores.type(), "dets should have the same type as scores");
+       ^~~~~~~~~~
+    In file included from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/Tensor.h:3:0,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/Context.h:4,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/ATen.h:9,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/extension.h:4,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/vision.h:3,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:2:
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/core/TensorBody.h:277:30: note: declared here
+       DeprecatedTypeProperties & type() const {
+                                  ^~~~
+    In file included from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/core/Device.h:5:0,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/core/Allocator.h:6,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/ATen.h:7,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/extension.h:4,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/vision.h:3,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:2:
+    /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:11:23: warning: ‘at::DeprecatedTypeProperties& at::Tensor::type() const’ is deprecated: Tensor.type() is deprecated. Instead use Tensor.options(), which in many cases (e.g. in a constructor) is a drop-in replacement. If you were using data from type(), that is now available from Tensor itself, so instead of tensor.type().scalar_type(), use tensor.scalar_type() instead and instead of tensor.type().backend() use tensor.device(). [-Wdeprecated-declarations]
+       AT_ASSERTM(dets.type() == scores.type(), "dets should have the same type as scores");
+                  ~~~~~~~~~^~
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:219:39: note: in definition of macro ‘C10_EXPAND_MSVC_WORKAROUND’
+     #define C10_EXPAND_MSVC_WORKAROUND(x) x
+                                           ^
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:238:34: note: in expansion of macro ‘C10_UNLIKELY’
+     #define C10_UNLIKELY_OR_CONST(e) C10_UNLIKELY(e)
+                                      ^~~~~~~~~~~~
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:285:7: note: in expansion of macro ‘C10_UNLIKELY_OR_CONST’
+       if (C10_UNLIKELY_OR_CONST(!(cond))) {       \
+           ^~~~~~~~~~~~~~~~~~~~~
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:447:32: note: in expansion of macro ‘TORCH_INTERNAL_ASSERT’
+         C10_EXPAND_MSVC_WORKAROUND(TORCH_INTERNAL_ASSERT(cond, __VA_ARGS__));     \
+                                    ^~~~~~~~~~~~~~~~~~~~~
+    /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:11:3: note: in expansion of macro ‘AT_ASSERTM’
+       AT_ASSERTM(dets.type() == scores.type(), "dets should have the same type as scores");
+       ^~~~~~~~~~
+    In file included from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/Tensor.h:3:0,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/Context.h:4,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/ATen.h:9,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/extension.h:4,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/vision.h:3,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:2:
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/core/TensorBody.h:277:30: note: declared here
+       DeprecatedTypeProperties & type() const {
+                                  ^~~~
+    In file included from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/core/Device.h:5:0,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/core/Allocator.h:6,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/ATen.h:7,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/extension.h:4,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/vision.h:3,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:2:
+    /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:11:40: warning: ‘at::DeprecatedTypeProperties& at::Tensor::type() const’ is deprecated: Tensor.type() is deprecated. Instead use Tensor.options(), which in many cases (e.g. in a constructor) is a drop-in replacement. If you were using data from type(), that is now available from Tensor itself, so instead of tensor.type().scalar_type(), use tensor.scalar_type() instead and instead of tensor.type().backend() use tensor.device(). [-Wdeprecated-declarations]
+       AT_ASSERTM(dets.type() == scores.type(), "dets should have the same type as scores");
+                                 ~~~~~~~~~~~^~
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:219:39: note: in definition of macro ‘C10_EXPAND_MSVC_WORKAROUND’
+     #define C10_EXPAND_MSVC_WORKAROUND(x) x
+                                           ^
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:238:34: note: in expansion of macro ‘C10_UNLIKELY’
+     #define C10_UNLIKELY_OR_CONST(e) C10_UNLIKELY(e)
+                                      ^~~~~~~~~~~~
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:285:7: note: in expansion of macro ‘C10_UNLIKELY_OR_CONST’
+       if (C10_UNLIKELY_OR_CONST(!(cond))) {       \
+           ^~~~~~~~~~~~~~~~~~~~~
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:447:32: note: in expansion of macro ‘TORCH_INTERNAL_ASSERT’
+         C10_EXPAND_MSVC_WORKAROUND(TORCH_INTERNAL_ASSERT(cond, __VA_ARGS__));     \
+                                    ^~~~~~~~~~~~~~~~~~~~~
+    /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:11:3: note: in expansion of macro ‘AT_ASSERTM’
+       AT_ASSERTM(dets.type() == scores.type(), "dets should have the same type as scores");
+       ^~~~~~~~~~
+    In file included from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/Tensor.h:3:0,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/Context.h:4,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/ATen.h:9,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/extension.h:4,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/vision.h:3,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:2:
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/core/TensorBody.h:277:30: note: declared here
+       DeprecatedTypeProperties & type() const {
+                                  ^~~~
+    In file included from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/core/Device.h:5:0,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/core/Allocator.h:6,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/ATen.h:7,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/extension.h:4,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/vision.h:3,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:2:
+    /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:11:40: warning: ‘at::DeprecatedTypeProperties& at::Tensor::type() const’ is deprecated: Tensor.type() is deprecated. Instead use Tensor.options(), which in many cases (e.g. in a constructor) is a drop-in replacement. If you were using data from type(), that is now available from Tensor itself, so instead of tensor.type().scalar_type(), use tensor.scalar_type() instead and instead of tensor.type().backend() use tensor.device(). [-Wdeprecated-declarations]
+       AT_ASSERTM(dets.type() == scores.type(), "dets should have the same type as scores");
+                                 ~~~~~~~~~~~^~
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:219:39: note: in definition of macro ‘C10_EXPAND_MSVC_WORKAROUND’
+     #define C10_EXPAND_MSVC_WORKAROUND(x) x
+                                           ^
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:238:34: note: in expansion of macro ‘C10_UNLIKELY’
+     #define C10_UNLIKELY_OR_CONST(e) C10_UNLIKELY(e)
+                                      ^~~~~~~~~~~~
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:285:7: note: in expansion of macro ‘C10_UNLIKELY_OR_CONST’
+       if (C10_UNLIKELY_OR_CONST(!(cond))) {       \
+           ^~~~~~~~~~~~~~~~~~~~~
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/c10/util/Exception.h:447:32: note: in expansion of macro ‘TORCH_INTERNAL_ASSERT’
+         C10_EXPAND_MSVC_WORKAROUND(TORCH_INTERNAL_ASSERT(cond, __VA_ARGS__));     \
+                                    ^~~~~~~~~~~~~~~~~~~~~
+    /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:11:3: note: in expansion of macro ‘AT_ASSERTM’
+       AT_ASSERTM(dets.type() == scores.type(), "dets should have the same type as scores");
+       ^~~~~~~~~~
+    In file included from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/Tensor.h:3:0,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/Context.h:4,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/ATen.h:9,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/types.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/data.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/all.h:8,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/extension.h:4,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/vision.h:3,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.cpp:2:
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/core/TensorBody.h:277:30: note: declared here
+       DeprecatedTypeProperties & type() const {
+                                  ^~~~
+    [10/11] /mnt/cache/share/gcc/gcc-7.3.0/bin/g++ -MMD -MF /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/ROIAlign_cpu.o.d -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DWITH_CUDA -I/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/TH -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/THC -I/mnt/cache/share/cuda-11.3/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/include/python3.6m -c -c /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/ROIAlign_cpu.cpp -o /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/ROIAlign_cpu.o -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++14
+    cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+    In file included from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/Parallel.h:149:0,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/utils.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/nn/cloneable.h:5,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/nn.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/all.h:12,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/extension.h:4,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/vision.h:3,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/ROIAlign_cpu.cpp:2:
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/ParallelOpenMP.h:84:0: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+     #pragma omp parallel for if ((end - begin) >= grain_size)
+
+    [11/11] /mnt/cache/share/gcc/gcc-7.3.0/bin/g++ -MMD -MF /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/vision.o.d -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DWITH_CUDA -I/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/TH -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/THC -I/mnt/cache/share/cuda-11.3/include -I/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/include/python3.6m -c -c /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/vision.cpp -o /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/vision.o -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++14
+    cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+    In file included from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/Parallel.h:149:0,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/utils.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/nn/cloneable.h:5,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/nn.h:3,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/csrc/api/include/torch/all.h:12,
+                     from /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/torch/extension.h:4,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/vision.h:3,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/nms.h:3,
+                     from /mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/vision.cpp:2:
+    /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/include/ATen/ParallelOpenMP.h:84:0: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+     #pragma omp parallel for if ((end - begin) >= grain_size)
+
+    creating build/lib.linux-x86_64-3.6
+    creating build/lib.linux-x86_64-3.6/maskrcnn_benchmark
+    /mnt/cache/share/gcc/gcc-7.3.0/bin/g++ -pthread -shared -B /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/compiler_compat -L/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib -Wl,-rpath=/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib -Wl,--no-as-needed -Wl,--sysroot=/ /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/vision.o /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/nms_cpu.o /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cpu/ROIAlign_cpu.o /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cuda/deform_pool_kernel_cuda.o /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cuda/SigmoidFocalLoss_cuda.o /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cuda/nms.o /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cuda/deform_conv_cuda.o /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cuda/ROIAlign_cuda.o /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cuda/ROIPool_cuda.o /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cuda/deform_pool_cuda.o /mnt/petrelfs/chenzeren/scene_graph_benchmark/build/temp.linux-x86_64-3.6/mnt/petrelfs/chenzeren/scene_graph_benchmark/maskrcnn_benchmark/csrc/cuda/deform_conv_kernel_cuda.o -L/mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/torch/lib -L/mnt/cache/share/cuda-11.3/lib64 -lc10 -ltorch -ltorch_cpu -ltorch_python -lcudart -lc10_cuda -ltorch_cuda -o build/lib.linux-x86_64-3.6/maskrcnn_benchmark/_C.cpython-36m-x86_64-linux-gnu.so
+    copying build/lib.linux-x86_64-3.6/maskrcnn_benchmark/_C.cpython-36m-x86_64-linux-gnu.so -> maskrcnn_benchmark
+    Creating /mnt/petrelfs/chenzeren/miniconda3/envs/sgg/lib/python3.6/site-packages/maskrcnn-benchmark.egg-link (link to .)
+    Adding maskrcnn-benchmark 0.1 to easy-install.pth file
+
+    Installed /mnt/petrelfs/chenzeren/scene_graph_benchmark
+Successfully installed maskrcnn-benchmark-0.1
